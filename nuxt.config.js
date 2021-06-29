@@ -100,15 +100,15 @@ export default {
   publicRuntimeConfig: {
     baseURL:
       process.env.NODE_ENV === 'production'
-        ? 'https://ecoseaproducts.com/api/admin'
-        : 'http://api.multicommerce.test/api/admin'
+        ? 'https://peaceful-beyond-74495.herokuapp.com/api/admin'
+        : 'http://127.0.0.1:8000/api/admin'
   },
 
   axios: {
     baseURL:
       process.env.NODE_ENV === 'production'
-        ? 'https://ecoseaproducts.com/api/admin'
-        : 'http://api.multicommerce.test/api/admin'
+        ? 'https://peaceful-beyond-74495.herokuapp.com/api/admin'
+        : 'http://127.0.0.1:8000/api/admin'
   },
 
   generate: {
