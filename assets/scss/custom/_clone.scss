@@ -1,0 +1,28 @@
+.clone::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 1rem;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0.5);
+  transform: rotate(15deg);
+  animation: load 1s linear infinite;
+}
+
+@keyframes load {
+  from {
+    transform: translate(-1000px) rotate(15deg);
+  }
+
+  to {
+    transform: translate(1000px) rotate(15deg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .clone::before {
+    animation: load 1.5s linear infinite;
+  }
+}
